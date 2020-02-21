@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "4.0.12",
+	"version": "4.0.13",
 	"description": "ctx-core loader",
 	"main": "loader-path.js",
 	"module": "loader-path.js",
