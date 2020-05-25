@@ -2,6 +2,7 @@
 	"name": "@ctx-core/loader",
 	"version": "4.0.17",
 	"description": "ctx-core loader",
+	"type": "module",
 	"main": "loader-path.js",
 	"module": "loader-path.js",
 	"types": "loader-path.ts",
