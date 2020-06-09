@@ -32,7 +32,7 @@
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.3"
+		"typescript": "^3.9.5"
 	},
 	"gitHead": "669fd35aa68f6c27ce3559d9e3dc4098dc91e63e"
 }
