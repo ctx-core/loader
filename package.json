@@ -2,9 +2,9 @@
 	"name": "@ctx-core/loader",
 	"version": "4.0.22",
 	"description": "ctx-core loader",
-	"main": "loader-path.js",
-	"module": "loader-path.js",
-	"types": "loader-path.ts",
+	"main": "index.js",
+	"module": "index.js",
+	"types": "index.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
