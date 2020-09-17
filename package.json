@@ -1,39 +1,39 @@
 {
-	"name": "@ctx-core/loader",
-	"version": "4.0.33",
-	"description": "ctx-core loader",
-	"keywords": [
-		"ctx-core",
-		"loader"
-	],
-	"homepage": "https://github.com/ctx-core/loader#readme",
-	"bugs": {
-		"url": "https://github.com/ctx-core/loader/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ctx-core/loader/issues"
-	},
-	"license": "Apache-2.0",
-	"author": "Brian Takita",
-	"main": "./index.js",
-	"module": "./index.js",
-	"types": "./index.ts",
-	"scripts": {
-		"build": "npm run clean && npm run compile",
-		"clean": "rm -f tsconfig.tsbuildinfo",
-		"compile": "tsc -b",
-		"exec": "$@",
-		"prepublishOnly": "npm run compile"
-	},
-	"dependencies": {
-		"valid-url": "^1.0.9"
-	},
-	"devDependencies": {
-		"typescript": "^4.0.2"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"gitHead": "c390d6bf30726d0d2fc5e99a4f958bdeb65ddeb5"
+  "name": "@ctx-core/loader",
+  "version": "4.0.34",
+  "description": "ctx-core loader",
+  "keywords": [
+    "ctx-core",
+    "loader"
+  ],
+  "homepage": "https://github.com/ctx-core/loader#readme",
+  "bugs": {
+    "url": "https://github.com/ctx-core/loader/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctx-core/loader/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "Brian Takita",
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./index.ts",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -f tsconfig.tsbuildinfo",
+    "compile": "./node_modules/.bin/tsc -b",
+    "exec": "$@",
+    "prepublishOnly": "npm run compile"
+  },
+  "dependencies": {
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "c390d6bf30726d0d2fc5e99a4f958bdeb65ddeb5"
 }
