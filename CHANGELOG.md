@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 5.0.1
+
+### Patch Changes
+
+- typescript: ^4.0.3 -> ^4.0.5
+
 ## 5.0.0
 
 ### Major Changes
