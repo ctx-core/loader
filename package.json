@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "6.0.2",
+	"version": "6.0.3",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
@@ -30,7 +30,7 @@
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
-		"typescript": "^4.1.5"
+		"typescript": "^4.2.2"
 	},
 	"publishConfig": {
 		"access": "public"
