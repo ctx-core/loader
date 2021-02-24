@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 6.0.4
+
+### Patch Changes
+
+- version bump
+
 ## 6.0.3
 
 ### Patch Changes
