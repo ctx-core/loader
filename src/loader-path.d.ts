@@ -1,1 +1,4 @@
-export declare function resolve(specifier: any, parentModuleURL: any, defaultResolver: any): Promise<any>;
+export declare function resolve(specifier: string, parentModuleURL: string, defaultResolver: (specifier: string, parentModuleURL: string) => string): Promise<string | {
+    url: string;
+    format: string;
+}>;

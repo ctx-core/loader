@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 6.1.0
+
+### Minor Changes
+
+- "noImplicitAny": true
+
 ## 6.0.10
 
 ### Patch Changes

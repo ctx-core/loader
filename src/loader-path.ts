@@ -3,24 +3,24 @@ import fs from 'fs'
 import valid__url from 'valid-url'
 const { access } = fs
 const { R_OK } = fs.constants
-async function _path__file(path__file__) {
-	let path__file = path__file__
-	if (await is__readable(path__file)) {
-		return path__file
+async function _path__file(in_file_path:string) {
+	let file_path = in_file_path
+	if (await is_readable(file_path)) {
+		return file_path
 	}
-	path__file = `${path__file__}.js`
-	if (await is__readable(path__file)) {
-		return path__file
+	file_path = `${in_file_path}.js`
+	if (await is_readable(file_path)) {
+		return file_path
 	}
-	path__file = `${path__file__}.js`
-	if (await is__readable(path__file)) {
-		return path__file
+	file_path = `${in_file_path}.js`
+	if (await is_readable(file_path)) {
+		return file_path
 	}
 }
 export async function resolve(
-	specifier,
-	parentModuleURL,
-	defaultResolver
+	specifier:string,
+	parentModuleURL:string,
+	defaultResolver:(specifier:string, parentModuleURL:string)=>string
 ) {
 	if (
 		!specifier
@@ -28,46 +28,46 @@ export async function resolve(
 		|| specifier[0] == '/'
 		|| valid__url.isUri(specifier)
 	) {
-		return based__on__extname(specifier)
+		return based_on_extname(specifier)
 	}
-	const a1__NODE_PATH = _a1__NODE_PATH()
+	const a1__NODE_PATH = _NODE_PATH_a1()
 	for (let i = 0; i < a1__NODE_PATH.length; i++) {
 		const NODE_PATH__ = a1__NODE_PATH[i]
 		const path__file =
 			await _path__file(path.join(NODE_PATH__, specifier))
 		if (path__file) {
-			return based__on__extname(path__file)
+			return based_on_extname(path__file)
 		}
 	}
 	return defaultResolver(specifier, parentModuleURL)
-	function based__on__extname(path__file) {
-		const extname__path = path.extname(path__file)
+	function based_on_extname(file_path:string) {
+		const extname__path = path.extname(file_path)
 		if (!extname__path) {
 			return {
 				url:
-					/^file:/.test(path__file)
-					? path__file
-					: `file:${path__file}`,
+					/^file:/.test(file_path)
+					? file_path
+					: `file:${file_path}`,
 				format: 'cjs'
 			}
 		} else if (extname__path == '.js') {
-			return defaultResolver(path__file, parentModuleURL)
+			return defaultResolver(file_path, parentModuleURL)
 		} else {
 			return {
-				url: path__file,
+				url: file_path,
 				format: 'dynamic'
 			}
 		}
 	}
 }
-let NODE_PATH__cache
-let cache_NODE_PATH_a1 = [] as string[]
-function _a1__NODE_PATH() {
+let cache_NODE_PATH:string
+let cache_NODE_PATH_a1:string[] = []
+function _NODE_PATH_a1() {
 	const NODE_PATH = process.env.NODE_PATH || ''
-	if (NODE_PATH == NODE_PATH__cache)
+	if (NODE_PATH == cache_NODE_PATH)
 		return cache_NODE_PATH_a1
 	cache_NODE_PATH_a1 = []
-	NODE_PATH__cache = NODE_PATH
+	cache_NODE_PATH = NODE_PATH
 	const a1__NODE_PATH = NODE_PATH.split(':')
 	for (let i = 0; i < a1__NODE_PATH.length; i++) {
 		let out_NODE_PATH = a1__NODE_PATH[i].trim()
@@ -82,9 +82,9 @@ function _a1__NODE_PATH() {
 	}
 	return cache_NODE_PATH_a1
 }
-function is__readable(path) {
-	return new Promise(resolve => {
-		access(path, R_OK, err => {
+function is_readable(path:string) {
+	return new Promise(resolve=>{
+		access(path, R_OK, err=>{
 			if (err) {
 				resolve(false)
 			} else {
