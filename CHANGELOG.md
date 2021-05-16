@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 6.1.1
+
+### Patch Changes
+
+- fix: target: 2018: nodejs compatability
+
 ## 6.1.0
 
 ### Minor Changes
