@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 6.2.1
+
+### Patch Changes
+
+- .gitignore: - \*.js
+
 ## 6.2.0
 
 ### Minor Changes
