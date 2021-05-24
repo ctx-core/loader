@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 6.2.0
+
+### Minor Changes
+
+- dist,types directory: addressing typescript build issues
+
 ## 6.1.3
 
 ### Patch Changes
