@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "6.2.1",
+	"version": "6.3.0",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
@@ -18,7 +18,7 @@
 	"author": "Brian Takita",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
-	"types": "./types/index.d.ts",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "npm run clean && npm run compile",
 		"clean": "rm -f tsconfig.tsbuildinfo",
