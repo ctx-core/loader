@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 6.3.2
+
+### Patch Changes
+
+- fix: build: clean up old build files in dist
+
 ## 6.3.1
 
 ### Patch Changes
