@@ -30,9 +30,9 @@ export async function resolve(
 	) {
 		return based_on_extname(specifier)
 	}
-	const NODE_PATH_a1 = _NODE_PATH_a1()
-	for (let i = 0; i < NODE_PATH_a1.length; i++) {
-		const NODE_PATH = NODE_PATH_a1[i]
+	const NODE_PATH_a = NODE_PATH_a_()
+	for (let i = 0; i < NODE_PATH_a.length; i++) {
+		const NODE_PATH = NODE_PATH_a[i]
 		const file_path =
 			await _file_path(path.join(NODE_PATH, specifier))
 		if (file_path) {
@@ -61,16 +61,16 @@ export async function resolve(
 	}
 }
 let cache_NODE_PATH:string
-let cache_NODE_PATH_a1:string[] = []
-function _NODE_PATH_a1() {
+let cache_NODE_PATH_a:string[] = []
+function NODE_PATH_a_() {
 	const NODE_PATH = process.env.NODE_PATH || ''
 	if (NODE_PATH == cache_NODE_PATH)
-		return cache_NODE_PATH_a1
-	cache_NODE_PATH_a1 = []
+		return cache_NODE_PATH_a
+	cache_NODE_PATH_a = []
 	cache_NODE_PATH = NODE_PATH
-	const NODE_PATH_a1 = NODE_PATH.split(':')
-	for (let i = 0; i < NODE_PATH_a1.length; i++) {
-		let out_NODE_PATH = NODE_PATH_a1[i].trim()
+	const NODE_PATH_a = NODE_PATH.split(':')
+	for (let i = 0; i < NODE_PATH_a.length; i++) {
+		let out_NODE_PATH = NODE_PATH_a[i].trim()
 		const back_regexp = new RegExp('^\.\.')
 		const current_regexp = new RegExp('^\.')
 		if (back_regexp.test(out_NODE_PATH)) {
@@ -78,9 +78,9 @@ function _NODE_PATH_a1() {
 		} else if (current_regexp.test(out_NODE_PATH)) {
 			out_NODE_PATH = path.join(process.cwd(), out_NODE_PATH)
 		}
-		cache_NODE_PATH_a1.push(out_NODE_PATH)
+		cache_NODE_PATH_a.push(out_NODE_PATH)
 	}
-	return cache_NODE_PATH_a1
+	return cache_NODE_PATH_a
 }
 function is_readable(path:string) {
 	return new Promise(resolve=>{

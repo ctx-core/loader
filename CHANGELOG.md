@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 7.0.0
+
+### Major Changes
+
+- move from dist to src directory
+
 ## 6.3.3
 
 ### Patch Changes
