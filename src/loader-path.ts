@@ -3,7 +3,7 @@ import fs from 'fs'
 import url_valid from 'valid-url'
 const { access } = fs
 const { R_OK } = fs.constants
-async function _file_path(in_file_path:string) {
+async function file_path_(in_file_path:string) {
 	let file_path = in_file_path
 	if (await is_readable(file_path)) {
 		return file_path
@@ -16,6 +16,7 @@ async function _file_path(in_file_path:string) {
 	if (await is_readable(file_path)) {
 		return file_path
 	}
+	return
 }
 export async function resolve(
 	specifier:string,
@@ -34,7 +35,7 @@ export async function resolve(
 	for (let i = 0; i < NODE_PATH_a.length; i++) {
 		const NODE_PATH = NODE_PATH_a[i]
 		const file_path =
-			await _file_path(path.join(NODE_PATH, specifier))
+			await file_path_(path.join(NODE_PATH, specifier))
 		if (file_path) {
 			return based_on_extname(file_path)
 		}
