@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "7.0.10",
+	"version": "8.0.0",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
