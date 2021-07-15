@@ -1,1 +1,1 @@
-export * from './loader-path'
+export * from './loader-path.js'
