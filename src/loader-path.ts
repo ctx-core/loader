@@ -3,7 +3,7 @@ import fs from 'fs'
 import url_valid from 'valid-url'
 const { access } = fs
 const { R_OK } = fs.constants
-async function file_path_(in_file_path:string) {
+async function file_path_(in_file_path:string):Promise<string|undefined> {
 	let file_path = in_file_path
 	if (await is_readable(file_path)) {
 		return file_path
@@ -22,7 +22,7 @@ export async function resolve(
 	specifier:string,
 	parentModuleURL:string,
 	defaultResolver:(specifier:string, parentModuleURL:string)=>string
-) {
+):Promise<string|{ url:string; format:string }> {
 	if (
 		!specifier
 		|| specifier[0] == '.'
