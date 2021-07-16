@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.9
+
+### Patch Changes
+
+- fix: cjs: load as a Promise
+
 ## 8.0.8
 
 ### Patch Changes
