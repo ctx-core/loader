@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.16
+
+### Patch Changes
+
+- typescript: ^4.4.3 -> ^4.4.4
+
 ## 8.0.15
 
 ### Patch Changes
