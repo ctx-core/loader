@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.17
+
+### Patch Changes
+
+- compile using swc
+
 ## 8.0.16
 
 ### Patch Changes
