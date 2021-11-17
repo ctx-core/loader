@@ -1,5 +1,5 @@
-import path from 'path'
 import fs from 'fs'
+import path from 'path'
 import url_valid from 'valid-url'
 const { access } = fs
 const { R_OK } = fs.constants
