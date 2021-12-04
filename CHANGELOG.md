@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.23
+
+### Patch Changes
+
+- @swc/core: ^1.2.116 -> ^1.2.117
+
 ## 8.0.22
 
 ### Patch Changes
