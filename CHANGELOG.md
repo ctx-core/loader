@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.25
+
+### Patch Changes
+
+- package.json: - "main": explicitly not support cjs
+
 ## 8.0.24
 
 ### Patch Changes
