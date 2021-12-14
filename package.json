@@ -17,9 +17,9 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./src/index.ts",
 	"exports": {
 		".": {
+			"types": "./src/index.ts",
 			"import": "./dist/index.js"
 		},
 		"./package.json": "./package.json"
@@ -35,8 +35,8 @@
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
-		"@swc/cli": "^0.1.52",
-		"@swc/core": "^1.2.118",
+		"@swc/cli": "^0.1.55",
+		"@swc/core": "^1.2.120",
 		"@types/valid-url": "^1.0.3",
 		"typescript": "next"
 	},
