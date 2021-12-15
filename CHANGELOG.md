@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.27
+
+### Patch Changes
+
+- package.json: svelte: ./dist/index.js
+
 ## 8.0.26
 
 ### Patch Changes
