@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.28
+
+### Patch Changes
+
+- fix: package.json: exports
+
 ## 8.0.27
 
 ### Patch Changes
