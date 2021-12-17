@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.34
+
+### Patch Changes
+
+- fix: error TS6059: \* is not under 'rootDir': package.json: types: ./dist/index.d.ts
+
 ## 8.0.33
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "8.0.33",
+	"version": "8.0.34",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
@@ -17,7 +17,7 @@
 	"license": "Apache-2.0",
 	"author": "Brian Takita",
 	"type": "module",
-	"types": "./src/index.ts",
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/index.js"
