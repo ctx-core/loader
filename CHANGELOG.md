@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.31
+
+### Patch Changes
+
+- fix: build
+
 ## 8.0.30
 
 ### Patch Changes
