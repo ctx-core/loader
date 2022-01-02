@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.35
+
+### Patch Changes
+
+- .js + .d.ts instead of .ts
+
 ## 8.0.34
 
 ### Patch Changes
