@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.0.42
+
+### Patch Changes
+
+- tsconfig.json: - importsNotUsedAsValues
+
 ## 8.0.41
 
 ### Patch Changes
