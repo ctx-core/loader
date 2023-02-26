@@ -1,5 +1,13 @@
 # @ctx-core/loader
 
+## 8.1.1
+
+### Patch Changes
+
+- import*meta_env*() instead of process.env
+- Updated dependencies
+  - @ctx-core/env@17.2.18
+
 ## 8.1.0
 
 ### Minor Changes

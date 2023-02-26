@@ -1,3 +1,4 @@
+import { import_meta_env_ } from '@ctx-core/env'
 import { access, constants } from 'fs'
 import path from 'path'
 import url_valid from 'valid-url'
@@ -56,7 +57,7 @@ async function file_path_(in_file_path) {
 let cache_NODE_PATH
 let cache_NODE_PATH_a = []
 function NODE_PATH_a_() {
-	const NODE_PATH = process.env.NODE_PATH || ''
+	const NODE_PATH = import_meta_env_().NODE_PATH || ''
 	if (NODE_PATH == cache_NODE_PATH) return cache_NODE_PATH_a
 	cache_NODE_PATH_a = []
 	cache_NODE_PATH = NODE_PATH
