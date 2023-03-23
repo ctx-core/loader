@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.1.22
+
+### Patch Changes
+
+- @ctx-core/env: ^17.2.40 -> ^17.2.41
+
 ## 8.1.21
 
 ### Patch Changes
