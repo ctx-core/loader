@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "8.1.110",
+	"version": "8.1.111",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
@@ -37,7 +37,7 @@
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
-		"@types/valid-url": "^1.0.4",
+		"@types/valid-url": "^1.0.5",
 		"c8": "^8.0.1",
 		"check-dts": "^0.7.2",
 		"tsx": "^3.13.0",
