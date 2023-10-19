@@ -1,5 +1,14 @@
 # @ctx-core/loader
 
+## 8.1.114
+
+### Patch Changes
+
+- @types/valid-url: ^1.0.5 -> ^1.0.6
+- tsx: ^3.13.0 -> ^3.14.0
+- Updated dependencies
+  - @ctx-core/env@17.3.10
+
 ## 8.1.113
 
 ### Patch Changes
