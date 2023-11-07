@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.1.121
+
+### Patch Changes
+
+- @types/valid-url: ^1.0.6 -> ^1.0.7
+
 ## 8.1.120
 
 ### Patch Changes
