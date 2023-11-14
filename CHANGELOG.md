@@ -1,5 +1,13 @@
 # @ctx-core/loader
 
+## 8.2.3
+
+### Patch Changes
+
+- package.json: files: + \*.js
+- Updated dependencies
+  - @ctx-core/env@17.4.3
+
 ## 8.2.2
 
 ### Patch Changes
