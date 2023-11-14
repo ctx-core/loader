@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "8.2.1",
+	"version": "8.2.2",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
@@ -19,6 +19,7 @@
 	"type": "module",
 	"files": [
 		"*.d.ts",
+		"*.json",
 		"./loader-path"
 	],
 	"types": "./index.d.ts",
@@ -36,7 +37,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/env": "^17.4.1",
+		"@ctx-core/env": "^17.4.2",
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
