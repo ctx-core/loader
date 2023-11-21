@@ -1,5 +1,13 @@
 # @ctx-core/loader
 
+## 8.2.24
+
+### Patch Changes
+
+- tsx: ^4.1.4 -> ^4.2.0
+- Updated dependencies
+  - @ctx-core/env@17.4.25
+
 ## 8.2.23
 
 ### Patch Changes
