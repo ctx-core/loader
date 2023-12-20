@@ -38,7 +38,7 @@
 		"test-unit-coverage": "c8 pnpm test-unit"
 	},
 	"dependencies": {
-		"@ctx-core/env": "^17.4.61",
+		"ctx-core": "^5.1.0",
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {

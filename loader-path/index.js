@@ -1,4 +1,4 @@
-import { import_meta_env_ } from '@ctx-core/env'
+import { import_meta_env_ } from 'ctx-core/env'
 import { access, constants } from 'fs'
 import path from 'path'
 import url_valid from 'valid-url'
