@@ -1,6 +1,6 @@
 import { import_meta_env_ } from 'ctx-core/env'
-import { access, constants } from 'fs'
-import path from 'path'
+import { access, constants } from 'node:fs'
+import path from 'node:path'
 import url_valid from 'valid-url'
 const { R_OK } = constants
 /**
