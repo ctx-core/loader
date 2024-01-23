@@ -1,5 +1,11 @@
 # @ctx-core/loader
 
+## 8.2.110
+
+### Patch Changes
+
+- ctx-core: ^5.26.0 -> ^5.27.0
+
 ## 8.2.109
 
 ### Patch Changes
