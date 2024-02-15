@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "8.2.141",
+	"version": "8.2.142",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
@@ -39,7 +39,7 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^6.3.0",
+		"ctx-core": "^6.4.1",
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
