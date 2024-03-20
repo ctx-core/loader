@@ -1,5 +1,13 @@
 # @ctx-core/loader
 
+## 8.2.160
+
+### Patch Changes
+
+- package.json: author: url,email
+- Updated dependencies
+  - ctx-core@6.6.1
+
 ## 8.2.159
 
 ### Patch Changes
