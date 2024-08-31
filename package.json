@@ -1,6 +1,6 @@
 {
 	"name": "@ctx-core/loader",
-	"version": "8.2.207",
+	"version": "8.2.208",
 	"description": "ctx-core loader",
 	"keywords": [
 		"ctx-core",
@@ -43,14 +43,14 @@
 		"disable:test:unit:coverage": "c8 pnpm test:unit"
 	},
 	"dependencies": {
-		"ctx-core": "^7.2.30",
+		"ctx-core": "^7.2.31",
 		"valid-url": "^1.0.9"
 	},
 	"devDependencies": {
 		"@types/valid-url": "^1.0.7",
 		"c8": "^10.1.2",
-		"check-dts": "^0.8.0",
-		"tsx": "^4.17.0",
+		"check-dts": "^0.8.2",
+		"tsx": "^4.19.0",
 		"typescript": "next",
 		"uvu": "^0.5.6"
 	},
