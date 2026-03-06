@@ -1,5 +1,13 @@
 # @ctx-core/loader
 
+## 8.2.211
+
+### Patch Changes
+
+- chore: migrate scripts from pnpm to bun
+- Updated dependencies
+  - ctx-core@7.2.34
+
 ## 8.2.210
 
 ### Patch Changes
